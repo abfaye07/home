@@ -1,0 +1,175 @@
+<html><head><base href="/report?company=The%2520City%2520Bank%2520Limited&jurisdiction=BD"><title>SynComply - Detailed Report: The City Bank Limited (Bangladesh)</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f0f0; color: #333; line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+header { background-color: #1a1a1a; color: white; padding: 20px 0; }
+h1, h2, h3, h4 { margin: 0; padding: 10px 0; }
+.logo { font-size: 2.5em; font-weight: bold; text-align: center; }
+nav { margin-top: 20px; text-align: center; }
+button { background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; transition: background-color 0.3s; }
+button:hover { background-color: #45a049; }
+.report { background-color: white; border-radius: 5px; padding: 20px; margin-top: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+.section { margin-bottom: 20px; padding: 10px; background-color: #f9f9f9; border-radius: 5px; }
+.risk-score { font-size: 1.2em; font-weight: bold; }
+.low-risk { color: #2ecc71; }
+.medium-risk { color: #f39c12; }
+.high-risk { color: #e74c3c; }
+.compliance-status { display: inline-block; padding: 5px 10px; border-radius: 3px; font-weight: bold; }
+.compliant { background-color: #2ecc71; color: white; }
+.non-compliant { background-color: #e74c3c; color: white; }
+.warning { background-color: #f39c12; color: white; }
+.risk-factor { background-color: #f8f9fa; border-left: 4px solid #4CAF50; padding: 10px; margin-bottom: 5px; }
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
+.chart { width: 100%; height: 300px; margin-top: 20px; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1 class="logo">SynComply</h1>
+    <nav>
+      <button onclick="location.href='/'">Home</button>
+      <button onclick="location.href='/search?company=City+Bank+&jurisdiction=BD'">Back to Results</button>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <div class="report">
+    <h2>Detailed Compliance Report: The City Bank Limited</h2>
+    <p><strong>Jurisdiction:</strong> Bangladesh</p>
+    <p><strong>Report Date:</strong> 2023-06-20</p>
+    
+    <div class="section">
+      <h3>Executive Summary</h3>
+      <p>The City Bank Limited, one of the leading private commercial banks in Bangladesh, demonstrates a moderate risk profile with partial compliance to regulatory standards. The bank has shown improvements in its compliance practices but still faces challenges in certain areas, particularly in relation to PEP exposure and transaction monitoring.</p>
+      <p>Risk Score: <span class="risk-score medium-risk">67/100</span> (Moderate Risk)</p>
+      <p>Compliance Status: <span class="compliance-status warning">Partial Compliance</span></p>
+    </div>
+    
+    <div class="section">
+      <h3>Key Risk Factors</h3>
+      <div class="risk-factor">
+        <h4>PEP Exposure</h4>
+        <p>Medium Risk: Several board members have political connections, potentially increasing the risk of conflicts of interest and requiring enhanced due diligence.</p>
+      </div>
+      <div class="risk-factor">
+        <h4>AML Procedures</h4>
+        <p>Moderate Risk: While AML procedures are in place, there is room for improvement in transaction monitoring systems to detect and report suspicious activities more effectively.</p>
+      </div>
+      <div class="risk-factor">
+        <h4>Regulatory Compliance</h4>
+        <p>Moderate Risk: Recent minor violations in reporting procedures have been noted, indicating a need for stronger internal controls and staff training.</p>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h3>Detailed Analysis</h3>
+      <h4>1. Corporate Governance</h4>
+      <p>The bank's board composition includes individuals with political connections, which while not uncommon in the region, does present elevated risks. Enhanced monitoring and strict conflict of interest policies are recommended.</p>
+      
+      <h4>2. AML/CFT Framework</h4>
+      <p>The bank has implemented standard AML/CFT policies, but the effectiveness of its transaction monitoring system is below industry best practices. Upgrading to more sophisticated AI-driven monitoring tools is advised.</p>
+      
+      <h4>3. Regulatory Compliance</h4>
+      <p>Minor reporting violations in the past year suggest a need for improved internal processes and staff training. The bank has been cooperative with regulators in addressing these issues.</p>
+      
+      <h4>4. Customer Due Diligence</h4>
+      <p>CDD procedures are generally adequate but could be enhanced, especially for high-risk customers and PEPs. Implementation of a risk-based approach to CDD is recommended.</p>
+      
+      <h4>5. Sanctions Screening</h4>
+      <p>The bank employs automated sanctions screening tools, but there have been instances of false positives affecting operational efficiency. Refinement of screening parameters is suggested.</p>
+    </div>
+    
+    <div class="section">
+      <h3>Compliance Metrics</h3>
+      <table>
+        <tr>
+          <th>Metric</th>
+          <th>Score</th>
+          <th>Industry Average</th>
+        </tr>
+        <tr>
+          <td>AML Policy Effectiveness</td>
+          <td>72%</td>
+          <td>78%</td>
+        </tr>
+        <tr>
+          <td>KYC Compliance Rate</td>
+          <td>89%</td>
+          <td>92%</td>
+        </tr>
+        <tr>
+          <td>Regulatory Reporting Accuracy</td>
+          <td>95%</td>
+          <td>97%</td>
+        </tr>
+        <tr>
+          <td>Staff Training Completion</td>
+          <td>98%</td>
+          <td>96%</td>
+        </tr>
+      </table>
+    </div>
+    
+    <div class="section">
+      <h3>Historical Risk Score Trend</h3>
+      <canvas id="riskChart" class="chart"></canvas>
+    </div>
+    
+    <div class="section">
+      <h3>Recommendations</h3>
+      <ol>
+        <li>Enhance transaction monitoring systems with AI-driven analytics to improve detection of suspicious activities.</li>
+        <li>Implement stricter controls and oversight for PEP-related accounts and transactions.</li>
+        <li>Conduct a comprehensive review of regulatory reporting processes and provide targeted training to relevant staff.</li>
+        <li>Upgrade CDD procedures, particularly for high-risk customers, incorporating more dynamic risk assessment models.</li>
+        <li>Refine sanctions screening parameters to reduce false positives while maintaining effectiveness.</li>
+      </ol>
+    </div>
+    
+    <div class="section">
+      <h3>Next Steps</h3>
+      <p>SynComply recommends a follow-up assessment in 6 months to evaluate the implementation of suggested improvements and reassess the bank's risk profile and compliance status.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+var ctx = document.getElementById('riskChart').getContext('2d');
+var chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: ['2019', '2020', '2021', '2022', '2023'],
+        datasets: [{
+            label: 'Risk Score',
+            data: [72, 70, 69, 68, 67],
+            borderColor: 'rgb(75, 192, 192)',
+            tension: 0.1
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                beginAtZero: false,
+                min: 60,
+                max: 80
+            }
+        }
+    }
+});
+
+document.querySelectorAll('button').forEach(button => {
+  button.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (this.getAttribute('onclick')) {
+      window.location.href = this.getAttribute('onclick').split("'")[1];
+    }
+  });
+});
+</script>
+</body></html>
