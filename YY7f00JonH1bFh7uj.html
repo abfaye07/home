@@ -1,0 +1,157 @@
+<html><head><base href="/"><title>SynComply - AI-Powered Global Compliance Assessment</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f0f0; color: #333; }
+.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+header { background-color: #1a1a1a; color: white; padding: 20px 0; }
+h1, h2, h3 { margin: 0; }
+.logo { font-size: 2.5em; font-weight: bold; text-align: center; }
+nav { margin-top: 20px; text-align: center; }
+button, .cta-button { background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; transition: background-color 0.3s; }
+button:hover, .cta-button:hover { background-color: #45a049; }
+input[type="text"], select { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+.hero { background-color: #2c3e50; color: white; padding: 50px 0; text-align: center; }
+.hero h2 { font-size: 2.5em; margin-bottom: 20px; }
+.hero p { font-size: 1.2em; margin-bottom: 30px; }
+.features { display: flex; justify-content: space-around; margin-top: 50px; flex-wrap: wrap; }
+.feature { background-color: white; border-radius: 5px; padding: 20px; width: 30%; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+.feature h3 { color: #2c3e50; }
+.feature p { color: #34495e; }
+@media (max-width: 768px) {
+  .feature { width: 100%; }
+}
+.globe-animation {
+  width: 100px;
+  height: 100px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="45" fill="none" stroke="%23fff" stroke-width="2"/><ellipse cx="50" cy="50" rx="22" ry="45" fill="none" stroke="%23fff" stroke-width="2"/><line x1="5" y1="50" x2="95" y2="50" stroke="%23fff" stroke-width="2"/><line x1="50" y1="5" x2="50" y2="95" stroke="%23fff" stroke-width="2"/></svg>') no-repeat center center;
+  background-size: contain;
+  animation: rotate 10s linear infinite;
+  margin: 0 auto 20px;
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.news-ticker {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+.news-ticker-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker 30s linear infinite;
+}
+@keyframes ticker {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+.testimonials { 
+  background-color: #ecf0f1; 
+  padding: 50px 0; 
+  text-align: center; 
+}
+.testimonial { 
+  max-width: 800px; 
+  margin: 0 auto; 
+  font-style: italic; 
+}
+.testimonial-author { 
+  font-weight: bold; 
+  margin-top: 10px; 
+}
+footer { 
+  background-color: #34495e; 
+  color: white; 
+  text-align: center; 
+  padding: 20px 0; 
+  margin-top: 50px; 
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1 class="logo">SynComply</h1>
+  </div>
+</header>
+
+<div class="news-ticker">
+  <div class="news-ticker-content">
+    Breaking: New AML regulations announced for EU countries | FATF updates guidance on virtual assets | US Treasury implements stricter KYC requirements for financial institutions | Asian Development Bank report highlights compliance challenges in emerging markets
+  </div>
+</div>
+
+<div class="hero">
+  <div class="container">
+    <div class="globe-animation"></div>
+    <h2>AI-Powered Global Compliance Assessment</h2>
+    <p>Comprehensive, real-time compliance reports for over 200 jurisdictions worldwide</p>
+    <a href="#search" class="cta-button">Start Your Compliance Check</a>
+  </div>
+</div>
+
+<div class="container">
+  <h2 id="search">Entity Compliance Search</h2>
+  <form action="/search" method="GET">
+    <input type="text" name="company" placeholder="Enter company name" required>
+    <select name="jurisdiction" required>
+      <option value="">Select jurisdiction</option>
+      <option value="US">United States</option>
+      <option value="GB">United Kingdom</option>
+      <option value="DE">Germany</option>
+      <option value="FR">France</option>
+      <option value="JP">Japan</option>
+      <option value="CN">China</option>
+      <option value="IN">India</option>
+      <option value="BR">Brazil</option>
+      <option value="RU">Russia</option>
+      <option value="ZA">South Africa</option>
+    </select>
+    <button type="submit">Search</button>
+  </form>
+  
+  <div class="features">
+    <div class="feature">
+      <h3>Real-time Analysis</h3>
+      <p>Get up-to-date compliance information using our advanced AI algorithms.</p>
+    </div>
+    <div class="feature">
+      <h3>Global Coverage</h3>
+      <p>Access data from over 200 jurisdictions worldwide.</p>
+    </div>
+    <div class="feature">
+      <h3>Comprehensive Reports</h3>
+      <p>Detailed risk assessments and compliance recommendations tailored to your business.</p>
+    </div>
+  </div>
+</div>
+
+<div class="testimonials">
+  <div class="container">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>"SynComply has revolutionized our compliance process. Their AI-driven insights have saved us countless hours and significantly reduced our risk exposure."</p>
+      <p class="testimonial-author">- Sarah Johnson, Chief Compliance Officer, Global Financial Services Inc.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2023 SynComply. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('button, .cta-button').forEach(button => {
+  button.addEventListener('click', function(e) {
+    if (this.getAttribute('href') === '#search') {
+      e.preventDefault();
+      document.getElementById('search').scrollIntoView({behavior: 'smooth'});
+    }
+  });
+});
+</script>
+</body></html>
